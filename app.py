@@ -1,14 +1,11 @@
 from flask import Flask
-from flask_cors import CORS, cross_origin
-
 app = Flask(__name__)
-CORS(app, support_credentials=True)
+
 
 @app.route("/")
-def index():
-    return "<h1>Hello Azure!</h1>"
+def hello():
+    return "Hello, SmartNinja!"
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
-
+    app.run(host='127.0.0.1', port=8080, debug=True)
