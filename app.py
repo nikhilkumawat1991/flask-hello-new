@@ -1,10 +1,12 @@
 from flask import Flask
+from flask import Flask, request, render_template,jsonify, redirect, url_for
+
 app = Flask(__name__)
 
 
 @app.route("/")
 def hello():
-    return "Hello, Nikhil!"
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
