@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Smartathon</title>
+<link rel="shortcut icon" href="../static/images/favicon.png" />
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link type="text/css"rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://glimberger.github.io/bstree/assets/css/bstree.css">
+<link type="text/css"rel="stylesheet" href="../static/css/sweetalert.css">
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../static/js/sweetalert.js"></script>
+
+</head>
+
+<body>
+<!--=========== loader========================= -->
+<div id="overlay" class="hideDiv">
+<div class="veea-loader"></div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light header-color">
+    <div class="container">
+        <div class="image-logo">
+            <a href="#"><img class="" src="../static/images/logo.png" alt=""></a>
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav ml-auto hideDiv">
+                <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span><img class="" src="../static/images/profile.png" alt=""></span> Admin</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#" class="dropdown-item">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/"class="dropdown-item">Logout</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="background-color main-container">
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 service-section mt-2 mb-4">
+
+        <!--==========================Tabs Block===========================-->
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">Live Streaming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">Employee Detail</a>
+            </li>
+        
+        
+            </ul>
+            
+            <!-- Tab panes -->
+        
+            <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active show" id="tab1">
+                <div class="video-streaming-sec">
+
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/W7qRRIklb6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="btn-block mt-4">
+                    <button class="cust-btn" type="button"><a>Door On</a></button>
+                    <button class="cust-btn black" type="button"><a>Door Off</a></button>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade in service"  id="tab2">
+                <div class="emp-detail-sec">
+                    <table class="table table-striped mb-0">
+                        <thead>
+                          <tr>
+                            <th>Employee ID</th>
+                            <th>Employee Name</th>
+                            <th>Login Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>08:30:35 AM</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>08:30:35 AM</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>08:30:35 AM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+          
+        
+            </div><!--tab content-->
+           
+
+            <!--==========================Tabs Block===========================-->
+            
+            </div><!--col-sm-12-->
+    </div><!--row-->
+</div><!--container-->
+</div><!--main container-->
+
+<footer class="footer hideDiv">
+    <div class="container-fluid">
+    <div class="row align-items-center">
+       <div class="footer-logo col-sm-5"><img class="img-fluid" src="../static/images/powered.png"></div>
+       <div class="copyright-txt col-sm-7">Copyright &copy; 2020 Veea</div>
+    </div>
+ </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../static/js/jquery.bstree.js"></script>
+<script src="../static/js/custom.js"></script>
+
+<script>
+  $('document').ready(function () {    
+    $('[data-toggle="tooltip"]').tooltip();
+    $hiddenInput = $('.bstree-data')
+   $(".bstree-children").attr("title","");
+    $('.mytree').bstree({
+      dataSource: $hiddenInput,
+      initValues: $hiddenInput.data('ancestors'),
+      onDataPush: function (values) {
+        var def = '<strong class="pull-left">Values:&nbsp;</strong>'
+        for (var i in values) {
+          def += '<span class="pull-left">' + values[i] + '&nbsp;</span>'
+        }
+        $('#status').html(def)
+      },
+      updateNodeTitle: function (node, title) {
+        return '[' + node.attr('data-id') + '] ' + title + ' (' + node.attr('data-level') + ')'
+      }
+    })
+
+  })
+</script>
+</body>
+
+</html>

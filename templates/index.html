@@ -1,257 +1,124 @@
 <!doctype html>
-
 <html lang="en">
-
    <head>
-
       <meta charset="utf-8">
-
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
-      <title>Zigbee Application</title>
-
+      <title>Smartathon</title>
       <link rel="shortcut icon" href="../static/images/favicon.png" />
-
-      <link type="text/css"rel="stylesheet" href="../static/css/bootstrap.min.css">
-
-      <link type="text/css"rel="stylesheet" href="../static/css/select2.min.css">
-
-      <link type="text/css"rel="stylesheet" href="../static/css/style.css">
-
-      <link type="text/css"rel="stylesheet" href="../static/css/responsive.css">
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-   </head>
-
-   <body>
-
-      <div class="veera-login">
-
-         <div class="container">
-
-            <div class="row">
-
-               <div class="offset-sm-3 col-sm-6">
-
-                  <!-- <div class="text-center logo-img">
-
-                     <a href="#"><img class="mb-4 img-fluid" src="../static/images/artisan.png" alt=""></a>
-
-                     </div> -->
-
-                  <form class="form-signin" action="/connectedDevices">
-
-                     <div class="log-in-box">
-
-                        <!-- <h1 class="h3 mb-3 font-weight-normal wl-text text-center">Welcome</h1> -->
-
-                        <a href="#" class="inlineb w100 text-center mb-1"><img class="img-fluid logo-img" src="../static/images/artisan.png" alt=""></a>
-
-                        <p class="wl-sub-text text-center mb-5">Please login to continue</p>
-
-                        <div class="form-group">
-
-                           <label for="inputEmail" class="control-label left-gap">
-
-                           <span class="mail-image"><img class="mail-position" src="../static/images/msg-icon.png" alt=""></span>
-
-                           Email address
-
-                           </label>
-
-                           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-
-                        </div>
-
-                        <div class="form-group">
-
-                           <label for="inputPassword" class="control-label left-gap">
-
-                           <span class="mail-image"><img class="mail-position" src="../static/images/password.png" alt=""></span>	
-
-                           Password</label>
-
-                           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-
-                           <i class="login-eye fa fa-eye togglepassword fc-gray">
-
-                              <!-- <img src="../static/images/eye.svg"> -->
-
-                           </i>
-
-                        </div>
-
-                        <div class="form-group mt-5">
-
-                           <div class="checkbox mb-3">
-
-                              <div class="checkCover">
-
-                                 <div class="custom-control custom-checkbox">
-
-                                    <input type="checkbox" name="remember_me" value="1" id="remember_me" class="custom-control-input">             
-
-                                    <label class="custom-control-label" for="remember_me">Remember Me</label>
-
-                                 </div>
-
-                              </div>
-
-                              <div class="forgot-pass">
-
-                                 <a href="forgot">Forgot Password?</a>
-
-                              </div>
-
-                           </div>
-
-                        </div>
-
-                        <div class="error-msg"></div>
-
-                        <div class="form-group login-cover justify-content-center d-flex">
-
-                           <button class="veera-login-btn cust-btn" type="submit">
-
-                              <!-- <a href="login">Login</a> --><a>Login</a>
-
-                           </button>
-
-                        </div>
-
-                     </div>
-
-                  </form>
-
-                  <div class="pro-text-cover">
-
-                     <span></span>
-
-                     <div class="pro-text text-uppercase">Managed By</div>
-
-                     <div class="powered-by-img">
-
-                        <img class="" src="../static/images/veea-logo.png" alt="">
-
-                     </div>
-
-                  </div>
-
-               </div>
-
-            </div>
-
-         </div>
-
-      </div>
-
-      <script src="../static/js/jquery.min.js"></script>
-
-      <script src="../static/js/bootstrap.bundle.min.js"></script>
-
+      <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+      <link type="text/css"rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://glimberger.github.io/bstree/assets/css/bstree.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link type="text/css"rel="stylesheet" href="../static/css/sweetalert.css">
+      <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+          
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script type="text/javascript" src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../static/js/sweetalert.js"></script>
       <script src="../static/js/jquery.cookie.js"></script>
-
-      <script src="../static/js/select2.min.js"></script>
-
-      <script src="../static/js/custom.js"></script>
-
+   </head>
+   <body>
+      <div class="veera-login animate-area">
+         <div class="container">
+            <div class="row">
+               <div class="offset-sm-3 col-sm-6">
+                  <form class="form-signin" action="/services">
+                     <div class="log-in-box">
+                        <a href="#" class="inlineb w100 text-center mb-1"><img class="img-fluid logo-img" src="../static/images/logo.png" alt=""></a>
+                        <p class="wl-sub-text text-center mb-5">Please login to continue</p>
+                        <div class="form-group">
+                           <label for="inputEmail" class="control-label left-gap">
+                           <span class="mail-image"><img class="mail-position" src="../static/images/msg-icon.png" alt=""></span>
+                           Email address
+                           </label>
+                           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        </div>
+                        <div class="form-group">
+                           <label for="inputPassword" class="control-label left-gap">
+                           <span class="mail-image"><img class="mail-position" src="../static/images/password.png" alt=""></span>	
+                           Password</label>
+                           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                           <i class="login-eye fa fa-eye togglepassword fc-gray"></i>
+                        </div>
+                        <div class="form-group mt-5">
+                           <div class="checkbox mb-3">
+                              <div class="checkCover">
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="remember_me" value="1" id="remember_me" class="custom-control-input">             
+                                    <label class="custom-control-label" for="remember_me">Remember Me</label>
+                                 </div>
+                              </div>
+                              <div class="forgot-pass">
+                                 <a href="forgot">Forgot Password?</a>
+                              </div>
+                           </div>
+                        </div>
+                      
+                        <div class="form-group login-cover justify-content-center d-flex">
+                           <button class="veera-login-btn cust-btn" type="submit">
+                              <a>Login</a>
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+              
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../static/js/jquery.bstree.js"></script>
+<script src="../static/js/custom.js"></script>
    </body>
-
 </html>
-
 <script type="text/javascript">
-
    $(window).load(function(){
-
    	localStorage.setItem('artisan-key', "");
-
    	/* get cookies */
-
    	if ($.cookie('cookieStore')) {
-
    		var data=JSON.parse($.cookie("cookieStore"));
-
    		$('#inputEmail').val(data[0]);
-
    		$('#inputPassword').val(data[1]);
-
    	}
-
    
-
    	$( "form" ).submit(function( event ) { 	
-
    		
-
-   	  if ( $("#inputEmail" ).val() === "admin@veea.com" && $("#inputPassword" ).val() === "admin" ) {  
-
+   	  if ( $("#inputEmail" ).val() === "admin@smartathon.com" && $("#inputPassword" ).val() === "admin" ) {  
    		var result           = '';
-
    		var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-@#0123456789';
-
    	   	var charactersLength = characters.length;
-
    	   	for ( var i = 0; i < 20; i++ ) {
-
    	    	result += characters.charAt(Math.floor(Math.random() * charactersLength));
-
    	   	}
-
    	  	localStorage.setItem('artisan-key', result);
-
    	  	
-
    		//   cookies
-
    		if($("#remember_me").prop('checked')) {
-
    		   var storeData = new Array();
-
    		   storeData[0] = $('#inputEmail').val();
-
    		   storeData[1] = $('#inputPassword').val();
-
    		   $.cookie("cookieStore", JSON.stringify(storeData));			   
-
    		}
-
-   	    // $( "span" ).text( "Submitted Successfully." ).show();  
-
    	    return;  
-
    	  }  
-
-   	  $( ".error-msg" ).text( "Invalid Credential!" ).show().fadeOut( 8000 );  
-
+        swal("Invalid Credential!");
    	  event.preventDefault();  
-
    	});
-
    
-
    	// toggle password icon
-
    	$('body').on('click', '.togglepassword', function(e) {
-
    		e.stopPropagation();
-
    		$(this).toggleClass("fa-eye fa-eye-slash");
-
    		var input = $($(this).prev());
-
    		if (input.attr("type") == "password") {
-
    			input.attr("type", "text");
-
    		} else {
-
    			input.attr("type", "password");
-
    		}
-
    	});
-
    });
-
 </script>
