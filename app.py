@@ -2,11 +2,8 @@ import logging
 import json
 from flask import Flask, request, render_template,jsonify, redirect, url_for
 import os
-from flask_cors import CORS, cross_origin
-import yaml
 
 app = Flask(__name__)
-CORS(app, support_credentials=True)
 
 @app.route('/')
 def home():
@@ -14,7 +11,6 @@ def home():
 
 
 @app.route('/services', methods=['GET','POST'])
-@cross_origin(supports_credentials=True)
 def services():
     return render_template("services.html")    
 
