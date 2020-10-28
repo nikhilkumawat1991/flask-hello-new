@@ -1,9 +1,7 @@
 import logging
 import json
-import traceback
 from flask import Flask, request, render_template,jsonify, redirect, url_for
 import os
-import yaml
 
 app = Flask(__name__)
 
@@ -15,7 +13,6 @@ def home():
 
 @app.route('/services', methods=['GET','POST'])
 def services():
-    logging.debug("Redirecting to Device Connect Page")
     return render_template("services.html")    
 
 
