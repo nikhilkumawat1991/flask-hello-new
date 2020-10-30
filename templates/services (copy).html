@@ -17,9 +17,6 @@
 
 <body>
 <!--=========== loader========================= -->
-<div id="overlay" class="hideDiv">
-  <div class="veea-loader"></div>
-</div>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light header-color">
     <div class="container">
@@ -52,15 +49,7 @@
        //$(location).attr('href','/')
       }  
 
-      getEmpInfo();
-
-      setInterval(function()
-      { 
-        getEmpInfo();
-      }, 5000);//time in milliseconds 
-
-      function getEmpInfo(){
-        getEmpDetails().then( (result)=> {
+      getEmpDetails().then( (result)=> {
             response = result;
             let empDetail="";
             let empData=response.data;
@@ -70,21 +59,17 @@
               var dataCnt = 1;
               for(key in empData)
               {
-                
-               // console.log("Key"+key);
-                //console.log("value"+JSON.stringify(empData[key]));
-                empDetail+="<tr>"+
+                console.log("Key"+key);
+                console.log("value"+JSON.stringify(empData[key]));
+                empDetail="<tr>"+
                         "<td>"+empData[key].id+"</td>"+
                         "<td>"+empData[key].name+"</td>"+
                         "<td>"+empData[key].log_in_time+"</td>"+
                         "</tr>";
-
-              
                    
-               // $('.emp-detail-sec tbody').append(empDetail); 
+                $('.emp-detail-sec tbody').append(empDetail); 
                 dataCnt++;
               }
-               $('.emp-detail-sec tbody').html(empDetail);
             }
             else{
               $('.emp-detail-sec tbody').html("No Employee."); 
@@ -92,9 +77,7 @@
 
       } ).catch( ()=> {response = ""}) ;
 
-      }
       async function getEmpDetails() {
-        //console.log("fn called");
       return await $.ajax({
       url: "http://flask-hello-new.azurewebsites.net/get_emp_details",
       type: "GET",
@@ -105,11 +88,10 @@
       }).error(function (param) {
     
       });
-    } 
-    
+    }  
   });
 </script>
-<div class="background-color main-container animate-area">
+<div class="background-color main-container">
 <div class="container">
     <div class="row">
         <div class="col-sm-12 service-section mt-2 mb-4">
@@ -129,7 +111,7 @@
                 <iframe width="100%" height="100%" src="http://4.tcp.ngrok.io:10249/" class="responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="btn-block mt-4">
-                    <a class="cust-btn" type="button" href="/doorcontrol">Door Control</a>
+                    <a class="cust-btn" type="button">Door Control</a>
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane fade in service"  id="tab2">
